@@ -463,9 +463,10 @@ li a:hover:not(.active) {
   .container{
       display: flex;
       flex-direction: column;
+      width: 100%;
   }
   .identification{
-    width: 100%;
+    width: 500px;
     height: 100%;
     margin-bottom: -45px;
   }
@@ -477,6 +478,7 @@ li a:hover:not(.active) {
     margin-top: -25px;
     margin-left: 80%;
   }
+
   .text-1{
     color: white;
     font-size: 20px;
@@ -487,13 +489,18 @@ li a:hover:not(.active) {
     font-size: 20px;
    
   }
-  
-  .competences{
+  .card {
+    background-color: #bbbaba;
+   
+    padding-bottom: 2em;
     width: 100%;
+   }
+  .competences{
+    width: 460px;
     background-color: white;
   }
   .potentiel{
-    width: 100%;
+    width: 500px;
     padding: 0.5%;
   }
   .text{
