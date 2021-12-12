@@ -49,6 +49,27 @@
                             </div>
 
                         </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5>Envoyer un message</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <form method="post" action="../MY-CV/mail.php">
+                                        <div class="mb-3">
+                                            <label for="recipient-name" class="col-form-label">Adresse mail:</label>
+                                            <input type="text" class="form-control" id="recipient-name" name="adresseMail">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+</div>
                         <div class="about">
                         <div class="dropdown">
                             <div class="btn_plus"  id="btn" ><i class="fas fa-plus fa-3x" id="btnplus" ></i>
@@ -57,15 +78,8 @@
 
                             <div class="btnsend" id="plus">
                                     <a class="awe"><i class="fas fa-arrow-circle-down fa-2x" style="text-decoration:none; color:#fff;" ></i></a><br> 
-                                    <a data-bs-toggle="modal" data-bs-target="#myModal" class="awi"><i class="fas fa-share-alt-square fa-2x"  style="text-decoration: none;color:#fff;"></i> </a><br> 
-                             </div>  
-                            <!-- <form action="" class="alert">
-                                <label for="email">email;</label>
-                                <input type="text" placeholder="entrer votre email">
-                                <label for="objet"> objet:</label>
-                                <input type="text" placeholder="entrer votre objet">
-
-                            </form> -->
+                                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="awi"><i class="fas fa-share-alt-square fa-2x"  style="text-decoration: none;color:#fff;"></i> </a><br> 
+                             </div>                             
                         
                         </div>
                             
