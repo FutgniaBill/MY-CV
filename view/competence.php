@@ -1,28 +1,30 @@
 <?php
-    $com_listes= array(
-        array(
-            "titre" => "Développement front-end",
-            "langues" => "HTML5, SASS, VueJS, Angular, JavaFX",
-        ),
-        array(
-            "titre" => "Développement front-end",
-            "langues" => "HTML5, SASS, VueJS, Angular, JavaFX",
-        ),
-        array(
-            "titre" => "FrameWork front-end",
-            "langues" => "HTML5, SASS, VueJS, Angular, JavaFX",
-        ),
-        array(
-            "titre" => "Développement back-end",
-            "langues" => "NodeJs, Dupral 8, Laravel, Kotlin, C-sharp",
-        )
-        );
-                                
+   
+require 'classes/Conpetence.php';
+$List_competence=array(
+    new Conpetence("developpement front-end","HTML5,SASS,VueJS,Angular,JavaFx",90),
+
+    new Conpetence("developpement back-end","NodeJs,Drupal 8,Laravel,Java EE 7",90),
+
+    new Conpetence("developpement mobile","Android Kotlin,IOS Swift,Cordova,Flutter",90),
+
+    new Conpetence("UI/UX Design","photoshop CC,Adobe XD,Material Design",90)
+    
+
+    )
+
 ?>
+                                
+
 <section id="b" class="competences">
                         
-                                        <?php
-                                        foreach ($com_listes as $comp )
+                                         <?php
+                                         
+                                         foreach($List_competence as $competence){
+                                             $competence->get_conpetence();
+                                         }
+                                         
+                                       /* foreach ($com_listes as $comp )
                                         {
                                             echo '
                                             <div class="falculte">
@@ -40,10 +42,10 @@
                                                 </div>
                                             </div>
                                             ';
-                                        }
-                                        ?>
+                                        }*/
+                                        ?> 
                                         
                             
                         
                     
-                    </section>
+</section>

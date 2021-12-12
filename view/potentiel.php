@@ -1,74 +1,70 @@
 <?php
-$Expertise_listes= array(
-    array(
-        "diplome" => "DIPET 2 Electrotechnique",
-        "lieu" => "-@Enset de Douala",
-        "year" => "Août 2016",
-        "project" => "Gestion d'éclairage d'une maison (arduino + Android)"
-    ),
-    array(
-        "diplome" => "Oracle certified Associate",
-        "lieu" => "-@Kentnix Sarl",
-        "year" => "Mars 2009",
-        "project" => "Oracle Database 11g Administration"
-    ),
-    array(
-        "diplome" => "Oracle SQL Certified",
-        "lieu" => "-@Kentnix Sarl",
-        "year" => "Decembre 2008",
-        "project" => "SQL 2, SQL 3, XML"
-    ),
-    array(
-        "diplome" => "Licence professionnelle",
-        "lieu" => "-@Douala Institute of Tech.",
-        "year" => "Octobre 2008",
-        "project" => " Télécommunication / Réseaux"
-    ),
-    array(
-        "diplome" => "DEC /BTS ",
-        "lieu" => "- @CCNB Dieppe - Canadal",
-        "year" => "Mars 2009",
-        "project" => "Programmation Appliquée pour internet"
-    ),
-    array(
-        "diplome" => "Baccalauréat",
-        "lieu" => "-@Lycée Technique de Douala Bassa",
-        "year" => "Juin 2005",
-        "project" => "Electrotechnique, mention BIEN (major du centre)"
-    ),
-    );
-$img_experience="img/experiences.png";
-$title_exp="Experience professionnel";
-$title_exp2="expertise en entreprise";
-$img_menu="img/menu.png";
-$expertise1="Chef des projets technologiques -";
-$expertise2="Fondateur & DT -";
-$expertise3="Enseignant -";
-$expertise4="Developpeur en chef -";
-$expertise5="Responsable commercial-";
-$expertise6="Responsable marketing-";
-$espert_year1="De juillet 2019 à ce jour - http://mdem.cm";
-$espert_year2="De Juin 2015 à ce jour - http://chikdev.cm";
-$espert_year3="De Octobre 2011 à ce jour - http://istdi.cm";
-$espert_year4="De Mai 2013 à Juin 2015 - http://khayroual.cm";
-$espert_year5="De Decmbre 2012 à Juin 2013 - http://bao-sarl.cm";
-$espert_year6="De juillet 2019 à ce jour - http://mdem.cm";
-$poste1="Chef du projet annuaire-universel.cm de l'ART";
-$poste2="Réalisation de plusieurs sites web et applications mobiles";
-$poste3="Analyse UML, Merise, Dev android, IOS, big data";
-$poste4="Réalisation de multiples projets et web";
-$poste5="Définition des stratégies commerciales, contrôle de qualité";
-$poste6="Chef du projet annuaire-universel.cm de l'ART";
-$title_pasTps="Points d'interets";
-$simple_past="simple passe temps pour se faire un peu plaisir";
+require 'classes/Exper_prof.php';
+$List_Exp_prof=array(
+    new Exper_prof("Chef des projets technologiques -","@Ets. M DE M","De juillet 2019 à ce jour - http://mdem.cm","Chef du projet annuaire-universel.cm de l'ART"),
+
+    new Exper_prof("Fondateur & DT -","@Startup ChickDev","De Juin 2015 à ce jour - http://chikdev.cm","Réalisation de plusieurs sites web et applications mobiles"),
+
+    new Exper_prof("Enseignant -","@INSTITUT UNIVERSITAIRE DE LA CÔTE","De Octobre 2011 à ce jour - http://istdi.cm","Analyse UML, Merise, Dev android, IOS, big data"),
+
+    new Exper_prof("Developpeur en chef -","@Kayroual group","De Mai 2013 à Juin 2015 - http://khayroual.cm","Réalisation de multiples projets et web"),
+
+   new Exper_prof ("Responsable commercial-","@BAO Sarl","De Decmbre 2012 à Juin 2013 - http://bao-sarl.cm","Définition des stratégies commerciales, contrôle de qualité"),
+
+    new Exper_prof ("Responsable marketing-","@Ets. M DE M","De juillet 2019 à ce jour - http://mdem.cm","Chef du projet annuaire-universel.cm de l'ART"),
+
+);
 $l1="img/l2.png";
 $l2="img/l3.png";
 $l3="img/l6.png";
 $l4="img/l1.png";
 $l5="img/l4.png";
 $l5="img/l5.png";
+require 'classes/interets.php';
+    $List_interets=array(
+        new interets($l1),
+    
+        new interets($l2),
+    
+        new interets($l3),
+    
+        new interets($l4),
+    
+        new interets($l5)
+    );
+require 'classes/Langue.php';
+    $List_langues=array(
+        new Langue("Français")
+        )
+
+?>
+
+ 
+
+
+<?php
+require 'classes/Exper_acad.php';
+    $List_Exp_Acad=array(
+        new Exper_acad("DIPET 2 Electrotechnique","-@Enset de Douala","Août 2016","Gestion d'éclairage d'une maison (arduino + Android)"),
+    
+        new Exper_acad("Oracle certified Associate","-@Kentnix Sarl","Mars 2009","Oracle Database 11g Administration"),
+    
+        new Exper_acad("Oracle SQL Certified","-@Kentnix Sarl","Dec 2008","SQL 2, SQL 3, XML"),
+    
+        new Exper_acad("DIPET 2 Electrotechnique","-@Enset de Douala","Août 2016","Gestion d'éclairage d'une maison (arduino + Android)"),
+    
+        new Exper_acad("Oracle certified Associate","-@Kentnix Sarl","Mars 2009","Oracle Database 11g Administration"),
+    
+        new Exper_acad("Oracle SQL Certified","-@Kentnix Sarl","Dec 2008","SQL 2, SQL 3, XML"),
+    );
+$img_experience="img/experiences.png";
+$title_exp="Experience professionnel";
+$title_exp2="expertise en entreprise";
+$img_menu="img/menu.png";
 $check1="img/cocher.png";
 $check2="img/cocher.png";
+$title_pasTps="Points d'interets";
+$simple_past="simple passe temps pour se faire un peu plaisir";
 $icon_stud="img/student_26px.png";
 $icon_menu="img/menu.png";
 $old_year=2011;
@@ -77,6 +73,7 @@ $Total_exp= ($recent_year - $old_year);
 ?>
 
 <section id="c" class="potentiel">
+    <div class="card">
                 <div class="section_body">
                     <div class="section_body1">
                         <div class="expertise">
@@ -95,54 +92,12 @@ $Total_exp= ($recent_year - $old_year);
 
                         <div class="expertise_list">
                             <div class="scrol">
-                                <div class="expertise_detail">
-                                    <div class="work_post" id="arange_text"><?php echo $expertise1,"<b> @Ets. M DE M</b>";?></div>
-                                    <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year1;?></div>
-                                    <div class="work_realize" id="arange_text"><?php echo $poste1;?></div>
-                                    <div class="barre_division" >
-                                        <hr color="#f0f0f0">
-                                    </div>
-                                </div>
-                                <div class="expertise_detail">
-                                    <div class="work_post" id="arange_text"><?php echo $expertise2,"<b> @Startup ChickDev</b>";?></div>
-                                    <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year2;?></div>
-                                    <div class="work_realize" id="arange_text"><?php echo $poste2;?></div>
-                                    <div class="barre_division">
-                                        <hr color="#fafafa">
-                                    </div>
-                                </div>
-                                <div class="expertise_detail">
-                                    <div class="work_post" id="arange_text"><?php echo $expertise3,"<b> @INSTITUT UNIVERSITAIRE DE LA CÔTE</b>";?></div>
-                                    <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year3;?></div>
-                                    <div class="work_realize" id="arange_text"><?php echo $poste3;?></div>
-                                    <div class="barre_division">
-                                        <hr color="#f0f0f0">
-                                    </div>
-                                </div>
-                                <div class="expertise_detail">
-                                    <div class="work_post" id="arange_text"><?php echo $expertise4,"<b> @Kayroual group</b>";?></div>
-                                    <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year4;?></div>
-                                    <div class="work_realize" id="arange_text"><?php echo $poste4;?></div>
-                                    <div class="barre_division">
-                                        <hr color="#f0f0f0">
-                                    </div>
-                                </div>
-                                <div class="expertise_detail">
-                                <div class="work_post" id="arange_text"><?php echo $expertise4,"<b> @BAO Sarl</b>";?></div>
-                                <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year5;?></div>
-                                <div class="work_realize" id="arange_text"><?php echo $poste5;?></div>
-                                <div class="barre_division">
-                                    <hr color="#f0f0f0">
-                                </div>
-                                </div>
-                                <div class="expertise_detail">
-                                    <div class="work_post" id="arange_text"><?php echo $expertise4,"<b> @BAO Sarl</b>";?></div>
-                                    <div class="work_periode" id="arange_text" style="color: blue;"><?php echo $espert_year6;?></div>
-                                    <div class="work_realize" id="arange_text"><?php echo $poste6;?></div>
-                                    <div class="barre_division">
-                                        <hr color="#f0f0f0">
-                                    </div>
-                                    </div>
+                            <?php
+                                         
+                                         foreach($List_Exp_prof as $exper_prof){
+                                             $exper_prof->get_Exper_prof();
+                                         }
+                            ?>
                             </div>
                         </div>
                     </div>
@@ -150,32 +105,32 @@ $Total_exp= ($recent_year - $old_year);
                         <div class="passe_temps">
                             <h1><?php echo $title_pasTps;?></h1>
                             <div style="margin-bottom: 10px;"><?php echo $simple_past;?></div>
-                            <div class="detailsinteret">
-                                <div class="det1">
-                                <img src="<?php echo $l1;?>" alt="">
-                                <img src="<?php echo $l2;?>" alt="">
-                                <img src="<?php echo $l3;?>" alt="">
+                                <div class="detailsinteret">
+                                    <?php
+                                            
+                                            foreach($List_interets as $interet){
+                                                            $interet->get_interets();
+                                            }
+                                    ?>
                                 </div>
-                                <div class="det2">
-                                <img src="<?php echo $l4;?>" alt="">
-                                <img src="<?php echo $l5;?>" alt="">
-                                <img src="<?php echo $l6;?>" alt="">
-                                </div>
-                            
-                            </div>
                         </div>
                         <div class="language">
                             <h1><?php echo "Langues";?></h1>
                             <div> <?php echo "pratiquées en entreprise";?></div>
                             <div class="list_language">
-                                <div class="lang">
-                                    <img src="<?php echo $check1;?>" alt="">
-                                    <div><?php echo "Français";?></div>
-                                </div>
-                                <div class="lang">
-                                    <img src="<?php echo $check2;?>" alt="">
-                                    <div><?php echo "Anglais";?></div>
-                                </div>
+                            <div class="lang">
+                                <img src="<?php echo $check1;?>" alt="">
+                                
+                                <?php
+                                            
+                                            foreach($List_langues as $langue){
+                                                            $langue->get_Langues();
+                                            }
+                                            
+                                ?>
+                            </div>
+                            
+
                             </div>
                         </div>
                     </div>
@@ -198,23 +153,16 @@ $Total_exp= ($recent_year - $old_year);
         
                             <div class="expertise_list">
                                 <div class="scrol">
-                                    <?php
-                                        foreach ($Expertise_listes as $expertis )
-                                        {
-                                            echo '
-                                            <div class="expertise_detail">
-                                                <div class="work_post"  id="arange_text">'.$expertis["diplome"].'<b>'.$expertis["lieu"].'</b></div>
-                                                <div class="work_periode" id="arange_text" style="color: blue;">'.$expertis["year"].'</div> <div id="arange_text">'.$expertis["project"].'</div>
-                                                <div class="barre_division">
-                                                    <hr color="#f0f0f0">
-                                                </div>
-                                            </div>
-                                            ';
-                                        }
-                                    ?>
+                                <?php
+                                         
+                                         foreach($List_Exp_Acad as $exper_acad){
+                                             $exper_acad->get_Exper_acad();
+                                         }
+                                ?>
                                     
                                 </div>
                             </div>
                         </div>
                 </div>
-            </section>
+     </div>
+</section>

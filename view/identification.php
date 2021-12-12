@@ -1,3 +1,5 @@
+
+
 <?php
  $img_backg = "img/sombre.jpg";
  $img_menu = "img/menu_filled_50px.png";
@@ -28,6 +30,7 @@
 ?>
 
 <section id="a" class="identification">
+    <div class="card">
                     <div class="first">
                         <div class="profil" style="background-image: url(<?php echo $img_backg;?>); height: 400px;background-size: cover; width: 100%;">
                             <div class="recherche">
@@ -47,9 +50,25 @@
 
                         </div>
                         <div class="about">
-                            <div class="btn_envoyer">
-                                <img id="btn_env" src="<?php echo $btn_send;?>" alt="">
+                        <div class="dropdown">
+                            <div class="btn_plus"  id="btn" ><i class="fas fa-plus fa-3x" id="btnplus" ></i>
+                                <i class="fas fa-times fa-3x" id="btnfois" style="display: none;"></i>
                             </div>
+
+                            <div class="btnsend" id="plus">
+                                    <a class="awe"><i class="fas fa-arrow-circle-down fa-2x" style="text-decoration:none; color:#fff;" ></i></a><br> 
+                                    <a data-bs-toggle="modal" data-bs-target="#myModal" class="awi"><i class="fas fa-share-alt-square fa-2x"  style="text-decoration: none;color:#fff;"></i> </a><br> 
+                             </div>  
+                            <!-- <form action="" class="alert">
+                                <label for="email">email;</label>
+                                <input type="text" placeholder="entrer votre email">
+                                <label for="objet"> objet:</label>
+                                <input type="text" placeholder="entrer votre objet">
+
+                            </form> -->
+                        
+                        </div>
+                            
                             <div class="info"></div>
                                 <div class="naissance">
                                     <div class="date_naissance">
@@ -95,7 +114,6 @@
                                     <div class="lieu_nais">
                                         <div class="text"><?php echo $txt_email;?></div>
                                         <div class="text"><?php echo $moteur_search;?></div>
-                                        
                                         <hr color="#ffffff">
                                     </div>
                                 </div>
@@ -112,8 +130,33 @@
 
 
                         </div>
-                    <!-- </div> -->
+                
+       
+        <script>
+                let btnplus =document.getElementById("btnplus");
+                btnplus.addEventListener('click',affiche,false);
+                let btnfois =document.getElementById("btnfois");
+                btnfois.addEventListener('click',fermer,false);
+
+                let plus=document.getElementById("plus");
+               
+
+                function affiche(){
+
+                    plus.style.display="block";
+                    btnplus.style.display="none";
+                    btnfois.style.display="block";
+                }
+                function fermer(){
+                    plus.style.display="none";
+                    btnfois.style.display="none";
+                    btnplus.style.display="block";
+                }
+        </script>
+                   
                 <?php 
                 include("competence.php");
                 ?>
-            </section>
+    </div>
+</section>
+    
