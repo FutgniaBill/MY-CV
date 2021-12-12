@@ -79,7 +79,7 @@ html, body {
 
 }
 .recherche{
-  width: 95%;
+  width: 100%;
   margin: 1%;
   height: 20%;
   background-color: rgb(223, 223, 223);
@@ -96,6 +96,7 @@ html, body {
 .srch{
   background-color: rgb(223, 223, 223);
   outline: none;
+  
 }
 
 .name_pict{
@@ -144,7 +145,7 @@ h4{
   font-weight: bold;
 }
 hr{
-  width: 350px;
+  width: 280px;
 }
 .picture{
   border-radius: 100%;
